@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+	--pale-blue: #e0e8ff;
+	--bright-blue: #3829e0;
+	--very-pale-blue: #f5f7ff;
+	--desaturated-blue: #7280a7;
+	--dark-blue: #1f2f56;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 2.4rem;
+    background: var(--pale-blue) url(./images/pattern-background-mobile.svg) no-repeat;
+    background-size: 100%;
+}
+
+section {
+    min-width: 32.7rem;
+    max-width: 45rem;
+    background: #ffffff;
+    border-radius: 2rem;
+}
+
+section > figure img {
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.info {
+    padding: 2.4rem;
+}
+
+.description h1{
+    color: var(--dark-blue);
+    font-size: 2.2rem;
+    margin-bottom: 1.6rem;
+}
+
+.description p{
+    color: var(--desaturated-blue);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.plan {
+    border-radius: 1.2rem;
+    padding: 1.6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    margin-bottom: 2.4rem;
+}
+
+.plan-type {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+
+.play-type-description {
+    margin-left: 2rem;
+}
+
+.plan-type-description strong {
+    font-size: 1.4rem;
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.plan-type-description p{
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    color: var(--desaturated-blue);
+}
+
+.plan-change a{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--bright-blue);
+}
+
+.payment a {
+    transition: 0.3s;
+    font-size: 1.5rem;
+    font-weight: 900;
+    width: fit-content;
+    color: var(--desaturated-blue);
+    text-decoration: none;
+    display: block;
+    margin-inline: auto;
+    margin-top: 2.4rem;
+}
+
+.payment a:hover {
+    transition: 0.3s;
+    color: black;
+}
+
+.payment button {
+    transition: 0.3s;
+    font-size: 1.5rem;
+    border-style: none;
+    border-radius: 1.2rem;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    color: white;
+    background-color: var(--bright-blue);
+}
+
+.payment button:hover {
+    transition: 0.3s;
+    opacity: 60%;
+}

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+:root{
+    --bright-orange:#e38826;
+    --dark-cyan: #006970;
+    --very-dark-cyan: #004241;
+    --very-light-grey: #f2f2f2;
+    --transparent-white: rgba(255, 255, 255, 0.75);
+}
+
+h2, p{
+    margin-bottom: 1.6rem;
+}
+
+section h2{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: white;
+}
+
+section p{
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--transparent-white);
+}
+
+section{
+    padding: 3rem;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+section img{
+    margin-bottom: 2rem;
+}
+
+.sedans{
+    background-color: var(--bright-orange);
+    border-radius: 8px 8px 0 0;
+}
+
+.suvs{
+    background-color: var(--dark-cyan);
+}
+
+.luxury{
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 0 8px 8px;
+}
+
+.sedans button{
+    background: var(--bright-orange);
+    font-size: 15px;
+    padding: 12px 32px;
+    margin-top: 1rem;
+    border: 2px solid var(--very-light-grey);
+    border-radius: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--very-light-grey);
+}
+
+.sedans button:hover{
+    border: 2px solid var(--very-light-grey);
+    background-color: var(--transparent-white);
+    color: var(--bright-orange);
+}
+
+.suvs button{
+    background: var(--dark-cyan);
+    font-size: 15px;
+    padding: 12px 32px;
+    margin-top: 1rem;
+    border: 2px solid var(--very-light-grey);
+    border-radius: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--very-light-grey);
+}
+
+.suvs button:hover{
+    border: 2px solid var(--very-light-grey);
+    background-color: var(--transparent-white);
+    color: var(--dark-cyan);
+}
+
+.luxury button{
+    background: var(--very-dark-cyan);
+    font-size: 15px;
+    padding: 12px 32px;
+    margin-top: 1rem;
+    border: 2px solid var(--very-light-grey);
+    border-radius: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--very-light-grey)
+}
+
+.luxury button:hover{
+    border: 2px solid var(--very-light-grey);
+    background-color: var(--transparent-white);
+    color: var(--very-dark-cyan);
+}
+
+@media(min-width: 880px){
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        display: flex;
+        max-width: 920px;
+    }
+    section{
+        display: block;
+    }
+    section .sedans{
+        border-radius: 8px 0 8px 0;
+    }
+
+}

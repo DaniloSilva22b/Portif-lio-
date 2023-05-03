@@ -1,0 +1,214 @@
+@use '../abstracks/reset';
+@use '../abstracks/colors';
+@use '../abstracks/fonts';
+
+*{
+    font-family: fonts.$karla;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background: colors.$light-grey;
+    padding: 3.2rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    margin-top: 7.2rem;
+    padding: 3.2rem;
+    min-width: 31.2rem;
+    max-width: 63.5rem;
+
+    .superior{
+        border-radius: 0.8rem 0.8rem 0 0;
+        background: white;
+        padding: 2.4rem;
+
+
+        .info_superior{
+            h1{
+                width: 26.3rem;
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 2.3rem;
+                letter-spacing: -0.025rem;
+                margin-bottom: 2.4rem;
+                color: colors.$cyan;
+            }
+
+            #information{
+                font-weight: 700;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                letter-spacing: -0.01875rem;
+                color: colors.$bright-yellow;
+                margin-bottom: 1.6rem;
+            }
+
+            p{
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 2.6rem;
+                letter-spacing: -0.0175rem;
+                color: colors.$p2;
+            }
+        }
+    }
+
+    .inferior{
+
+        .left_inferior{
+            padding: 2.4rem;
+            background: colors.$cyan;
+
+            h2{
+                font-weight: 700;
+                font-size: 1.8rem;
+                line-height: 2.1rem;
+                letter-spacing: -0.0225rem;
+                color: white;
+                margin-bottom: 1.8rem;
+            }
+
+            .information_price{
+                display: flex;
+
+                #price{
+                    font-weight: 700;
+                    font-size: 3.2rem;
+                    line-height: 3.7rem;
+                    letter-spacing: -0.04rem;
+                    color: white;
+                    margin-right: 1.1rem;
+                }
+
+                #price_descript{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 2.6rem;
+                    letter-spacing: -0.02rem;
+                    color: white;
+                    mix-blend-mode: normal;
+                    opacity: 0.5;
+                }
+            }
+
+            & > p{
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 2.6rem;
+                letter-spacing: -0.02rem;
+                color: white;
+                margin-bottom: 2.6rem;
+            }
+
+            button{
+                border: 0 solid;
+                background: colors.$bright-yellow;
+                width: 26.3rem;
+                height: 4.8rem;
+                font-weight: 700;
+                font-size: 1.6rem;
+                line-height: 1.9rem;
+                letter-spacing: -0.02rem;
+                color: white;
+                box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+                border-radius: 5px;
+            }
+
+            button:hover{
+                background: white;
+                color: colors.$bright-yellow;
+                border: 3px solid colors.$bright-yellow;
+            }
+        }
+
+        .right_inferior{
+            background: colors.$cyan;
+            mix-blend-mode: normal;
+            opacity: 0.85;
+            padding: 2.4rem;
+            border-radius: 0 0 0.8rem 0.8rem;
+
+            h2{
+                font-weight: 700;
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+                letter-spacing: -0.0225rem;
+                color: #FFFFFF;
+                margin-bottom: 1.8rem;
+            }
+
+            p{
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.175px;
+                color: #FFFFFF;
+                mix-blend-mode: normal;
+                opacity: 0.75;
+            }
+        }
+    }
+}
+
+@media (min-width: 500px){
+    section{
+        padding: 4rem;
+
+        .superior{
+            padding: 4rem;
+    
+            .info_superior{
+                h1{
+                    font-size: 2.4rem;
+                    line-height: 2.8rem;
+                    letter-spacing: -0.03rem;
+                }
+    
+                #information{
+                    font-size: 1.8rem;
+                    line-height: 2.1rem;
+                    letter-spacing: -0.0225rem;
+                    margin-bottom: 1.1rem;
+                }
+    
+                & > p{
+                    font-size: 1.4rem;
+                    line-height: 2.6rem;
+                    letter-spacing: -0.02rem;
+                    color: colors.$p2;
+                }
+            }
+
+        }
+
+        .inferior{
+            display: flex;
+            width: 100%;
+
+            .left_inferior{
+                border-radius: 0 0 0 0.8rem;
+                width: 31.8rem;
+
+                button{
+                    width: 23.7rem;
+                }
+            }
+
+            .right_inferior{
+                border-radius: 0 0 0.8rem 0;
+                width: 31.8rem;
+            }
+        }
+    }
+}

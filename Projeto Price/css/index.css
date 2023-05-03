@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding and reset fonts */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+* {
+  font-family: "Karla", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #e5eff5;
+  padding: 3.2rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  margin-top: 7.2rem;
+  padding: 3.2rem;
+  min-width: 31.2rem;
+  max-width: 63.5rem;
+}
+section .superior {
+  border-radius: 0.8rem 0.8rem 0 0;
+  background: white;
+  padding: 2.4rem;
+}
+section .superior .info_superior h1 {
+  width: 26.3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  letter-spacing: -0.025rem;
+  margin-bottom: 2.4rem;
+  color: #2ab2af;
+}
+section .superior .info_superior #information {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: -0.01875rem;
+  color: #c0df34;
+  margin-bottom: 1.6rem;
+}
+section .superior .info_superior p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.0175rem;
+  color: #9AA7BE;
+}
+section .inferior .left_inferior {
+  padding: 2.4rem;
+  background: #2ab2af;
+}
+section .inferior .left_inferior h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  letter-spacing: -0.0225rem;
+  color: white;
+  margin-bottom: 1.8rem;
+}
+section .inferior .left_inferior .information_price {
+  display: flex;
+}
+section .inferior .left_inferior .information_price #price {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 3.7rem;
+  letter-spacing: -0.04rem;
+  color: white;
+  margin-right: 1.1rem;
+}
+section .inferior .left_inferior .information_price #price_descript {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.02rem;
+  color: white;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+section .inferior .left_inferior > p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.02rem;
+  color: white;
+  margin-bottom: 2.6rem;
+}
+section .inferior .left_inferior button {
+  border: 0 solid;
+  background: #c0df34;
+  width: 26.3rem;
+  height: 4.8rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: -0.02rem;
+  color: white;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+  border-radius: 5px;
+}
+section .inferior .left_inferior button:hover {
+  background: white;
+  color: #c0df34;
+  border: 3px solid #c0df34;
+}
+section .inferior .right_inferior {
+  background: #2ab2af;
+  mix-blend-mode: normal;
+  opacity: 0.85;
+  padding: 2.4rem;
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+section .inferior .right_inferior h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.0225rem;
+  color: #FFFFFF;
+  margin-bottom: 1.8rem;
+}
+section .inferior .right_inferior p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.175px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+@media (min-width: 500px) {
+  section {
+    padding: 4rem;
+  }
+  section .superior {
+    padding: 4rem;
+  }
+  section .superior .info_superior h1 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    letter-spacing: -0.03rem;
+  }
+  section .superior .info_superior #information {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    letter-spacing: -0.0225rem;
+    margin-bottom: 1.1rem;
+  }
+  section .superior .info_superior > p {
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    letter-spacing: -0.02rem;
+    color: #9AA7BE;
+  }
+  section .inferior {
+    display: flex;
+    width: 100%;
+  }
+  section .inferior .left_inferior {
+    border-radius: 0 0 0 0.8rem;
+    width: 31.8rem;
+  }
+  section .inferior .left_inferior button {
+    width: 23.7rem;
+  }
+  section .inferior .right_inferior {
+    border-radius: 0 0 0.8rem 0;
+    width: 31.8rem;
+  }
+}/*# sourceMappingURL=index.css.map */
